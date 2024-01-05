@@ -21,11 +21,11 @@ class _HomePageState extends State<HomePage> {
         ),
         backgroundColor: Colors.black,
       ),
-      body: _buildGridView(),
+      body: _buildListView(),
     );
   }
 
-  Widget _buildGridView() {
+  Widget _buildListView() {
     return Consumer<HomePageViewModel>(
       builder: (context, viewModel, child) => ListView.builder(
         itemCount: viewModel.characters.length,
